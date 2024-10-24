@@ -4,10 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SportStoreSwMericApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(SportStoreSwMericApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
+
+
 
 }
