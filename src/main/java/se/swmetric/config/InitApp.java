@@ -49,7 +49,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(120)
                 .quantity(20)
-                .image("/img/women/shoes/s1_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshoes%2Fs1_bl.png?alt=media&token=3fb0a7e5-5faf-43fe-a401-aaa8329b4b96")
                 .build();
         p.setCategory(womenShoes);
         p.getColors().add(red);
@@ -63,7 +63,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(180)
                 .quantity(30)
-                .image("/img/women/shoes/s2_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshoes%2Fs2_bl.png?alt=media&token=4c3e7111-c47a-4e3e-a3ab-2be64d97f66e")
                 .build();
         p.setCategory(womenShoes);
         p.getColors().add(red);
@@ -77,7 +77,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(100)
                 .quantity(12)
-                .image("/img/women/shoes/s3_r.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshoes%2Fs3_r.png?alt=media&token=ffc70696-0d2a-4ca7-9313-7aef9ca4f7aa")
                 .build();
         p.setCategory(womenShoes);
         p.getColors().add(red);
@@ -91,7 +91,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(12)
                 .price(130)
                 .quantity(34)
-                .image("/img/women/shoes/s6.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshoes%2Fs6.png?alt=media&token=d253aea9-cfcb-45d5-b514-bd5b0bed4146")
                 .build();
         p.setCategory(womenShoes);
         p.getColors().add(red);
@@ -105,7 +105,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(20)
                 .price(90)
                 .quantity(32)
-                .image("/img/women/shoes/s7.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshoes%2Fs7.png?alt=media&token=3998810a-1832-4193-8a67-b732d4021836")
                 .build();
         p.setCategory(womenShoes);
         p.getColors().add(red);
@@ -119,7 +119,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(150)
                 .quantity(54)
-                .image("/img/women/shorts/sh1_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshorts%2Fsh1_bl.png?alt=media&token=bf7c2b54-0150-4960-a083-3299aa027b7a")
                 .build();
         p.setCategory(womenShorts);
         p.getColors().add(red);
@@ -133,7 +133,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(150)
                 .quantity(24)
-                .image("/img/women/shorts/sh2_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshorts%2Fsh2_bl.png?alt=media&token=b5a9b6f1-46c6-474b-92c9-4f755f7f642b")
                 .build();
         p.setCategory(womenShorts);
         p.getColors().add(red);
@@ -147,7 +147,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(130)
                 .quantity(34)
-                .image("/img/women/shirts/sh1_b.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshirts%2Fsh1_b.png?alt=media&token=cdd16e65-26e5-4bea-9253-d22be0052855")
                 .build();
         p.setCategory(womenShirt);
         p.getColors().add(red);
@@ -161,7 +161,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(140)
                 .quantity(75)
-                .image("/img/women/shirts/sh2_b.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshirts%2Fsh2_b.png?alt=media&token=d0dce6e0-06ca-46ef-8d1c-68d483869588")
                 .build();
         p.setCategory(womenShirt);
         p.getColors().add(red);
@@ -175,7 +175,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(10)
                 .price(130)
                 .quantity(45)
-                .image("/img/women/shirts/sh3_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshirts%2Fsh3_bl.png?alt=media&token=bb0b7099-729c-4a76-a319-c0f20f0c08c7")
                 .build();
         p.setCategory(womenShirt);
         p.getColors().add(red);
@@ -189,7 +189,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(120)
                 .quantity(65)
-                .image("/img/women/shirts/sh4_b.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshirts%2Fsh4_b.png?alt=media&token=752cc80b-8bd1-4ba2-a5ba-627436bf6813")
                 .build();
         p.setCategory(womenShirt);
         p.getColors().add(red);
@@ -203,7 +203,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(110)
                 .quantity(45)
-                .image("/img/women/shirts/sh5_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshirts%2Fsh5_bl.png?alt=media&token=c7e0b98c-a200-4015-a390-d7955b010f5b")
                 .build();
         p.setCategory(womenShirt);
         p.getColors().add(red);
@@ -217,7 +217,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(120)
                 .quantity(65)
-                .image("/img/women/shorts/sh3_r.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshorts%2Fsh3_r.png?alt=media&token=eda63e48-c126-4b53-995f-df7f549eb664")
                 .build();
         p.setCategory(womenShorts);
         p.getColors().add(red);
@@ -231,7 +231,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(110)
                 .quantity(45)
-                .image("/img/women/shorts/sh4_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshorts%2Fsh4_bl.png?alt=media&token=b14917d5-251b-402a-8dc2-72026ad42e24")
                 .build();
         p.setCategory(womenShorts);
         p.getColors().add(red);
@@ -245,7 +245,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(120)
                 .quantity(65)
-                .image("/img/women/shorts/sh5_b.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshorts%2Fsh5_b.png?alt=media&token=d02e4846-31d5-4c68-b0f9-015e78931c3b")
                 .build();
         p.setCategory(womenShorts);
         p.getColors().add(red);
@@ -259,7 +259,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(110)
                 .quantity(45)
-                .image("/img/women/shorts/sh6_b.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/women%2Fshorts%2Fsh6_b.png?alt=media&token=ef0c846f-2f82-42b8-badd-1aedb5500d54")
                 .build();
         p.setCategory(womenShorts);
         p.getColors().add(red);
@@ -358,7 +358,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(150)
                 .quantity(35)
-                .image("/img/men/shoes/s1_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/men%2Fshoes%2Fs1_bl.png?alt=media&token=cfa167c4-3a85-405b-9fd4-e468adf21fae")
                 .build();
         p.setCategory(menShoes);
         p.getColors().add(red);
@@ -372,7 +372,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(130)
                 .quantity(35)
-                .image("/img/men/shoes/s2_r.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/men%2Fshoes%2Fs2_r.png?alt=media&token=ece48b63-6dec-43cc-817c-18bb21cfa99d")
                 .build();
         p.setCategory(menShoes);
         p.getColors().add(red);
@@ -386,7 +386,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(140)
                 .quantity(64)
-                .image("/img/men/shoes/s3_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/men%2Fshoes%2Fs3_bl.png?alt=media&token=3200aa6c-3219-4d5b-9126-800e1a28ff6c")
                 .build();
         p.setCategory(menShoes);
         p.getColors().add(red);
@@ -400,7 +400,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(130)
                 .quantity(24)
-                .image("/img/men/shoes/s4_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/men%2Fshoes%2Fs4_bl.png?alt=media&token=f521d4bb-7986-4c2e-9339-2509ddc31287")
                 .build();
         p.setCategory(menShoes);
         p.getColors().add(red);
@@ -414,7 +414,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(120)
                 .quantity(54)
-                .image("/img/men/shorts/sh1_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/men%2Fshorts%2Fsh1_bl.png?alt=media&token=6125e90e-4e3c-4573-bdb5-645f1b284b8a")
                 .build();
         p.setCategory(menShorts);
         p.getColors().add(red);
@@ -428,7 +428,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(110)
                 .quantity(36)
-                .image("/img/men/shorts/sh2_b.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/men%2Fshorts%2Fsh2_b.png?alt=media&token=8f7a051e-6a55-423e-aba1-162d47b23d86")
                 .build();
         p.setCategory(menShorts);
         p.getColors().add(red);
@@ -442,7 +442,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(20)
                 .quantity(86)
-                .image("/img/men/shorts/sh3_bl.png")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/men%2Fshorts%2Fsh3_bl.png?alt=media&token=5ff2c6f7-96f9-4a17-a8b9-430f41825a9b")
                 .build();
         p.setCategory(menShorts);
         p.getColors().add(red);
