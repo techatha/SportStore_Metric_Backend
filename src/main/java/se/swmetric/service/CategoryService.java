@@ -23,7 +23,7 @@ public class CategoryService {
         return categoryRepository.findAll();
     }
 
-    public Optional<Category> getCategoryById(String categoryId) {
+    public Optional<Category> getCategoryById(Long categoryId) {
         return categoryRepository.findById(categoryId);
     }
 
@@ -31,7 +31,7 @@ public class CategoryService {
         return categoryRepository.save(category);
     }
 
-    public Category updateCategory(String categoryId, Category categoryDetails) {
+    public Category updateCategory(Long categoryId, Category categoryDetails) {
         Optional<Category> category = categoryRepository.findById(categoryId);
         if (category.isPresent()) {
             Category existingCategory = category.get();
@@ -43,7 +43,7 @@ public class CategoryService {
         }
     }
 
-    public void deleteCategory(String categoryId) {
+    public void deleteCategory(Long categoryId) {
         categoryRepository.deleteById(categoryId);
     }
 }

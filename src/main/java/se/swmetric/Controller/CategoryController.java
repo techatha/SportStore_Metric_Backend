@@ -26,7 +26,7 @@ public class CategoryController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Category> getCategoryById(@PathVariable("id") String id) {
+    public Optional<Category> getCategoryById(@PathVariable("id") Long id) {
         return categoryService.getCategoryById(id);
     }
 
@@ -36,12 +36,12 @@ public class CategoryController {
     }
 
     @PutMapping("/{id}")
-    public Category updateCategory(@PathVariable("id") String id, @RequestBody Category categoryDetails) {
+    public Category updateCategory(@PathVariable("id") Long id, @RequestBody Category categoryDetails) {
         return categoryService.updateCategory(id, categoryDetails);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteCategory(@PathVariable("id") String id) {
+    public void deleteCategory(@PathVariable("id") Long id) {
         categoryService.deleteCategory(id);
     }
 }
