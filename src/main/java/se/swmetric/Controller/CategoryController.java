@@ -1,6 +1,7 @@
 package se.swmetric.Controller;
 
 // CategoryController.java
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import se.swmetric.entity.Category;
@@ -26,7 +27,7 @@ public class CategoryController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Category> getCategoryById(@PathVariable("id") Long id) {
+    public Optional<Category> getCategoryById(@PathVariable("id") ObjectId id) {
         return categoryService.getCategoryById(id);
     }
 
@@ -36,12 +37,12 @@ public class CategoryController {
     }
 
     @PutMapping("/{id}")
-    public Category updateCategory(@PathVariable("id") Long id, @RequestBody Category categoryDetails) {
+    public Category updateCategory(@PathVariable("id") ObjectId id, @RequestBody Category categoryDetails) {
         return categoryService.updateCategory(id, categoryDetails);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteCategory(@PathVariable("id") Long id) {
+    public void deleteCategory(@PathVariable("id") ObjectId id) {
         categoryService.deleteCategory(id);
     }
 }

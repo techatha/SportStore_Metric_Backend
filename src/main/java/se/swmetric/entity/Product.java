@@ -4,10 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -17,7 +19,7 @@ import java.util.List;
 @Document(collection = "product")
 public class Product {
     @Id
-    Long id;
+    ObjectId id;
     Category category;
     String name;
     String description;
@@ -27,5 +29,6 @@ public class Product {
     String image;
 
     @DBRef // This annotation is used for referencing other documents
-    List<Color> colors;
+    @Builder.Default
+    List<Color> colors = new ArrayList<>();
 }

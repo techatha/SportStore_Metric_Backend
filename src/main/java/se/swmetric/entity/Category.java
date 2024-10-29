@@ -4,6 +4,7 @@ package se.swmetric.entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -13,19 +14,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "category")
 public class Category {
     @Id
-    private Long categoryId;
+    private ObjectId categoryId;
     private String categoryName;
     private String kind;
 
-
-
-    public Long getCategoryId() {
-        return categoryId;
-    }
-
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
-    }
 
     public String getCategoryName() {
         return categoryName;

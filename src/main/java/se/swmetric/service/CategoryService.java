@@ -1,6 +1,7 @@
 package se.swmetric.service;
 
 // CategoryService.java
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import se.swmetric.Repository.CategoryRepository;
@@ -23,7 +24,7 @@ public class CategoryService {
         return categoryRepository.findAll();
     }
 
-    public Optional<Category> getCategoryById(Long categoryId) {
+    public Optional<Category> getCategoryById(ObjectId categoryId) {
         return categoryRepository.findById(categoryId);
     }
 
@@ -31,7 +32,7 @@ public class CategoryService {
         return categoryRepository.save(category);
     }
 
-    public Category updateCategory(Long categoryId, Category categoryDetails) {
+    public Category updateCategory(ObjectId categoryId, Category categoryDetails) {
         Optional<Category> category = categoryRepository.findById(categoryId);
         if (category.isPresent()) {
             Category existingCategory = category.get();
@@ -43,7 +44,7 @@ public class CategoryService {
         }
     }
 
-    public void deleteCategory(Long categoryId) {
+    public void deleteCategory(ObjectId categoryId) {
         categoryRepository.deleteById(categoryId);
     }
 }

@@ -1,5 +1,6 @@
 package se.swmetric.service;
 
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import se.swmetric.Dao.ProductDao;
@@ -18,7 +19,7 @@ public class ProductService {
         return productDao.findAll();
     }
 
-    public Optional<Product> getProductById(Long id) {
+    public Optional<Product> getProductById(ObjectId id) {
         return productDao.findById(id);
     }
 
@@ -26,7 +27,7 @@ public class ProductService {
         return productDao.save(product);
     }
 
-    public Product updateProduct(Long id, Product product) {
+    public Product updateProduct(ObjectId id, Product product) {
         Optional<Product> existingProduct = productDao.findById(id);
         if (existingProduct.isPresent()) {
             product.setId(id); // Set the ID to ensure it updates the right product
@@ -35,7 +36,7 @@ public class ProductService {
         return null;
     }
 
-    public boolean deleteProduct(Long id) {
+    public boolean deleteProduct(ObjectId id) {
         if (productDao.findById(id).isPresent()) {
             productDao.deleteById(id);
             return true;

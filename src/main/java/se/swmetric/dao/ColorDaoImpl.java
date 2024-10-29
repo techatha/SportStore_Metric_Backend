@@ -1,6 +1,7 @@
 package se.swmetric.dao;
 
 import lombok.RequiredArgsConstructor;
+import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
 import se.swmetric.Repository.ColorRepository;
 import se.swmetric.entity.Color;
@@ -22,7 +23,7 @@ public class ColorDaoImpl implements ColorDao{
     }
 
     @Override
-    public Color getColor(Long id) {
+    public Color getColor(ObjectId id) {
         return colorRepository.findById(id).orElse(null);
     }
 

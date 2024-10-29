@@ -1,5 +1,6 @@
 package se.swmetric.Dao;
 
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import se.swmetric.Repository.ProductRepository;
@@ -18,7 +19,7 @@ public class ProductDao {
         return productRepository.findAll();
     }
 
-    public Optional<Product> findById(Long id) {
+    public Optional<Product> findById(ObjectId id) {
         return productRepository.findById(id);
     }
 
@@ -26,7 +27,7 @@ public class ProductDao {
         return productRepository.save(product);
     }
 
-    public void deleteById(Long id) {
+    public void deleteById(ObjectId id) {
         productRepository.deleteById(id);
     }
 }

@@ -1,5 +1,6 @@
 package se.swmetric.Controller;
 
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import se.swmetric.entity.Product;
@@ -21,7 +22,7 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Product> getProductById(@PathVariable Long id) {
+    public Optional<Product> getProductById(@PathVariable ObjectId id) {
         return productService.getProductById(id);
     }
 

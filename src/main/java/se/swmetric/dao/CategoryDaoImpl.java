@@ -1,6 +1,7 @@
 package se.swmetric.dao;
 
 import lombok.RequiredArgsConstructor;
+import org.bson.types.ObjectId;
 import org.springframework.stereotype.Repository;
 import se.swmetric.Repository.CategoryRepository;
 import se.swmetric.entity.Category;
@@ -22,7 +23,7 @@ public class CategoryDaoImpl implements CategoryDao{
     }
 
     @Override
-    public Category getCategory(Long id) {
+    public Category getCategory(ObjectId id) {
         return categoryRepository.findById(id).orElse(null);
     }
 
