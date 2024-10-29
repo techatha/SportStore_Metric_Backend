@@ -1,30 +1,29 @@
 package se.swmetric.entity;
 
 // Category.java
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Document(collection = "category")
 public class Category {
     @Id
-    private String categoryId;
+    private Long categoryId;
     private String categoryName;
     private String kind;
 
-    // Constructors, Getters, and Setters
-    public Category() {}
 
-    public Category(String categoryId, String categoryName, String kind) {
-        this.categoryId = categoryId;
-        this.categoryName = categoryName;
-        this.kind = kind;
-    }
 
-    public String getCategoryId() {
+    public Long getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(String categoryId) {
+    public void setCategoryId(Long categoryId) {
         this.categoryId = categoryId;
     }
 
