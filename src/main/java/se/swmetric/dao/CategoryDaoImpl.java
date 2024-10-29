@@ -23,7 +23,7 @@ public class CategoryDaoImpl implements CategoryDao{
 
     @Override
     public Category getCategory(Long id) {
-        return categoryRepository.findById(id);
+        return categoryRepository.findById(id).orElse(null);
     }
 
     @Override
