@@ -48,7 +48,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Air Zoom Pegasus")
                 .discount(0)
                 .price(120)
-                .quanltity(20)
+                .quantity(20)
                 .image("/img/women/shoes/s1_bl.png")
                 .build());
         p.setCategory(womenShoes);
@@ -60,7 +60,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Ultraboost")
                 .discount(0)
                 .price(180)
-                .quanltity(30)
+                .quantity(30)
                 .image("/img/women/shoes/s2_bl.png")
                 .build());
         p.setCategory(womenShoes);
@@ -72,7 +72,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's HOVR Sonic 4")
                 .discount(0)
                 .price(100)
-                .quanltity(12)
+                .quantity(12)
                 .image("/img/women/shoes/s3_r.png")
                 .build());
         p.setCategory(womenShoes);
@@ -84,7 +84,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Nano X")
                 .discount(12)
                 .price(130)
-                .quanltity(34)
+                .quantity(34)
                 .image("/img/women/shoes/s6.png")
                 .build());
         p.setCategory(womenShoes);
@@ -96,7 +96,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Ignite Dual")
                 .discount(20)
                 .price(90)
-                .quanltity(32)
+                .quantity(32)
                 .image("/img/women/shoes/s7.png")
                 .build());
         p.setCategory(womenShoes);
@@ -108,7 +108,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Fresh Foam 1080v11")
                 .discount(0)
                 .price(150)
-                .quanltity(54)
+                .quantity(54)
                 .image("/img/women/shorts/sh1_bl.png")
                 .build());
         p.setCategory(womenShorts);
@@ -120,7 +120,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Gel-Nimbus 23")
                 .discount(0)
                 .price(150)
-                .quanltity(24)
+                .quantity(24)
                 .image("/img/women/shorts/sh2_bl.png")
                 .build());
         p.setCategory(womenShorts);
@@ -132,7 +132,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Ghost 14")
                 .discount(0)
                 .price(130)
-                .quanltity(34)
+                .quantity(34)
                 .image("/img/women/shirts/sh1_b.png")
                 .build());
         p.setCategory(womenShirt);
@@ -144,7 +144,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Facet 45 OutDry")
                 .discount(0)
                 .price(140)
-                .quanltity(75)
+                .quantity(75)
                 .image("/img/women/shirts/sh2_b.png")
                 .build());
         p.setCategory(womenShirt);
@@ -156,7 +156,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Speedcross 5")
                 .discount(10)
                 .price(130)
-                .quanltity(45)
+                .quantity(45)
                 .image("/img/women/shirts/sh3_bl.png")
                 .build());
         p.setCategory(womenShirt);
@@ -168,7 +168,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Ultra 111 Waterproof")
                 .discount(0)
                 .price(120)
-                .quanltity(65)
+                .quantity(65)
                 .image("/img/women/shirts/sh4_b.png")
                 .build());
         p.setCategory(womenShirt);
@@ -180,7 +180,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Tiger Women's Gel-Lyte III")
                 .discount(0)
                 .price(110)
-                .quanltity(45)
+                .quantity(45)
                 .image("/img/women/shirts/sh5_bl.png")
                 .build());
         p.setCategory(womenShirt);
@@ -192,7 +192,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Ultra 2")
                 .discount(0)
                 .price(120)
-                .quanltity(65)
+                .quantity(65)
                 .image("/img/women/shorts/sh3_r.png")
                 .build());
         p.setCategory(womenShorts);
@@ -204,7 +204,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Nano X")
                 .discount(0)
                 .price(110)
-                .quanltity(45)
+                .quantity(45)
                 .image("/img/women/shorts/sh4_bl.png")
                 .build());
         p.setCategory(womenShorts);
@@ -216,7 +216,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Zero No Show")
                 .discount(0)
                 .price(120)
-                .quanltity(65)
+                .quantity(65)
                 .image("/img/women/shorts/sh5_b.png")
                 .build());
         p.setCategory(womenShorts);
@@ -228,7 +228,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Women's Facet 45 OutDry")
                 .discount(0)
                 .price(110)
-                .quanltity(45)
+                .quantity(45)
                 .image("/img/women/shorts/sh6_b.png")
                 .build());
         p.setCategory(womenShorts);
@@ -242,7 +242,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Men's Air Zoom Pegasus")
                 .discount(0)
                 .price(120)
-                .quanltity(25)
+                .quantity(25)
                 .image("/img/men/shirt/shm1_bl.png")
                 .build());
         p.setCategory(menShirt);
@@ -254,7 +254,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Men's Ultraboost")
                 .discount(0)
                 .price(180)
-                .quanltity(13)
+                .quantity(13)
                 .image("/img/men/shirt/shm2_r.png")
                 .build());
         p.setCategory(menShirt);
@@ -266,7 +266,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Men's HOVR Sonic 4")
                 .discount(20)
                 .price(120)
-                .quanltity(24)
+                .quantity(24)
                 .image("/img/men/shirt/shm3_r.png")
                 .build());
         p.setCategory(menShirt);
@@ -278,7 +278,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Men's Nano X")
                 .discount(0)
                 .price(130)
-                .quanltity(53)
+                .quantity(53)
                 .image("/img/men/shirt/shm4_b.png")
                 .build());
         p.setCategory(menShirt);
@@ -290,7 +290,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Men's Ignite Dual")
                 .discount(0)
                 .price(90)
-                .quanltity(23)
+                .quantity(23)
                 .image("/img/men/shirt/shm5_r.png")
                 .build());
         p.setCategory(menShirt);
@@ -302,7 +302,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Men's Fresh Foam 1080v11")
                 .discount(0)
                 .price(80)
-                .quanltity(13)
+                .quantity(13)
                 .image("/img/men/shirt/shm6_b.png")
                 .build());
         p.setCategory(menShirt);
@@ -314,7 +314,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Men's Gel-Nimbus 23")
                 .discount(0)
                 .price(150)
-                .quanltity(35)
+                .quantity(35)
                 .image("/img/men/shoes/s1_bl.png")
                 .build());
         p.setCategory(menShoes);
@@ -326,7 +326,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Men's Ghost 14")
                 .discount(0)
                 .price(130)
-                .quanltity(35)
+                .quantity(35)
                 .image("/img/men/shoes/s2_r.png")
                 .build());
         p.setCategory(menShoes);
@@ -338,7 +338,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Men's Facet 45 OutDry")
                 .discount(0)
                 .price(140)
-                .quanltity(64)
+                .quantity(64)
                 .image("/img/men/shoes/s3_bl.png")
                 .build());
         p.setCategory(menShoes);
@@ -350,7 +350,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Men's Speedcross 5")
                 .discount(0)
                 .price(130)
-                .quanltity(24)
+                .quantity(24)
                 .image("/img/men/shoes/s4_bl.png")
                 .build());
         p.setCategory(menShoes);
@@ -362,7 +362,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Men's Ultra 111 Waterproof")
                 .discount(0)
                 .price(120)
-                .quanltity(54)
+                .quantity(54)
                 .image("/img/men/shorts/sh1_bl.png")
                 .build());
         p.setCategory(menShorts);
@@ -374,7 +374,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Tiger Men's Gel-Lyte III")
                 .discount(0)
                 .price(110)
-                .quanltity(36)
+                .quantity(36)
                 .image("/img/men/shorts/sh2_b.png")
                 .build());
         p.setCategory(menShorts);
@@ -386,7 +386,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .description("Elite Cushioned Crew")
                 .discount(0)
                 .price(20)
-                .quanltity(86)
+                .quantity(86)
                 .image("/img/men/shorts/sh3_bl.png")
                 .build());
         p.setCategory(menShorts);
