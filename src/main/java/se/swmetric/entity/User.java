@@ -20,4 +20,5 @@ public class User {
     String password;
     String firstname;
     String lastname;
+    String role;
 }

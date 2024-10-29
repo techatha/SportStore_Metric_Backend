@@ -6,4 +6,4 @@ spring:
       - db
   data:
     mongodb:
-      uri: mongodb+srv://Techatham:password8888@swmetriccluster.iif1w.mongodb.net/?retryWrites=true&w=majority&appName=SWMetricCluster
+      uri: mongodb+srv://Techatham:password8888@swmetriccluster.iif1w.mongodb.net/SoftwareMetricShopStore?retryWrites=true&w=majority&appName=SWMetricCluster

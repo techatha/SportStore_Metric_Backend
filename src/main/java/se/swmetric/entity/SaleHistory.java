@@ -2,21 +2,21 @@ package se.swmetric.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDateTime;
-import java.util.List;
-
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Document(collection = "bill")
-public class Bill {
+@Document(collection = "sale_history")
+public class SaleHistory {
     @Id
     Long id;
-    LocalDateTime date;
+    Product product;
+    Integer saleAmount;
     Integer total;
-    List<Product> products;
+    Bill bill;
 }
