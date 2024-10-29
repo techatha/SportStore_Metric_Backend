@@ -21,8 +21,10 @@ public class Product {
     Category category;
     String name;
     String description;
+    Integer discount;
     double price;
-    int qualitySold;
+    int quantity;
+    String image;
 
     @DBRef // This annotation is used for referencing other documents
     List<Color> colors;
