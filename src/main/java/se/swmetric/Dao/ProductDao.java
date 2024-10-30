@@ -22,7 +22,7 @@ public class ProductDao {
     // Find a product by ObjectId
     public Optional<Product> findById(String id) {
         ObjectId objectId = new ObjectId(id);
-        return productRepository.findById(String.valueOf(objectId));
+        return productRepository.findById(objectId);
     }
 
 
@@ -37,6 +37,6 @@ public class ProductDao {
     }
 
     public void deleteById(ObjectId id) {
-        productRepository.deleteById(String.valueOf(id));
+        productRepository.deleteById(id);
     }
 }
