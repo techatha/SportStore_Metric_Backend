@@ -6,9 +6,11 @@ import se.swmetric.entity.Product;
 
 import java.util.List;
 
-@Repository
-public interface ProductRepository extends MongoRepository<Product, String> {
+import java.util.List;
 
-    // Corrected query method to match the Category entity field name
+@Repository
+
+public interface ProductRepository extends MongoRepository<Product, ObjectId> {
+
     List<Product> findByCategoryCategoryNameIgnoreCase(String categoryName);
 }

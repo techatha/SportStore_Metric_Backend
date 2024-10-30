@@ -25,8 +25,10 @@ public class ProductDao {
         return productRepository.findById(String.valueOf(objectId));
     }
 
+
     // Get products by category
     public List<Product> getProductsByCategory(String category) {
+
         return productRepository.findByCategoryCategoryNameIgnoreCase(category);
     }
 
