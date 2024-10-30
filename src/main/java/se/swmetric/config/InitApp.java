@@ -288,7 +288,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .discount(0)
                 .price(180)
                 .quantity(13)
-                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/men%2Fshirt%2Fshm2_r.png?alt=media&token=46e6dd49-500a-49fc-8df5-e56c3e3aa784")
+                .image("https://firebasestorage.googleapis.com/v0/b/sw-metric.appspot.com/o/men%2Fshirt%2Fshm2_r.png?alt=media&token=73624fe7-9a4a-4fb0-bfc5-4b48453b6657")
                 .build();
         p.setCategory(menShirt);
         p.getColors().add(red);

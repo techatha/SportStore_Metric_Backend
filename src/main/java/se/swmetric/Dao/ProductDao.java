@@ -25,7 +25,9 @@ public class ProductDao {
         return productRepository.findById(objectId);
     }
 
-
+    public List<Product> getAllProducts(String category){
+        return productRepository.findByCategoryCategoryNameIgnoreCase(category);
+    }
 
     public Product save(Product product) {
         return productRepository.save(product);

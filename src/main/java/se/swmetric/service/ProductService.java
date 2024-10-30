@@ -20,6 +20,9 @@ public class ProductService {
         return productDao.findAll();
     }
 
+    public List<Product> getAllProducts(String category){
+        return productDao.getAllProducts(category);
+    }
     // Get product by ID (String to ObjectId conversion handled)
     public Optional<Product> getProductById(String id) {
         try {
