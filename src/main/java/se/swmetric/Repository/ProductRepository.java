@@ -1,13 +1,14 @@
 package se.swmetric.Repository;
 
-import org.bson.types.ObjectId;
-import org.springframework.data.mongodb.repository.MongoRepository;
-import se.swmetric.entity.Product;
-
-
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
+import se.swmetric.entity.Product;
+
+import java.util.List;
 
 @Repository
-public interface ProductRepository extends MongoRepository<Product, ObjectId> {
+public interface ProductRepository extends MongoRepository<Product, String> {
+
+    // Corrected query method to match the Category entity field name
+    List<Product> findByCategoryCategoryNameIgnoreCase(String categoryName);
 }

@@ -52,4 +52,9 @@ public class ProductService {
             return Optional.empty();
         }
     }
+
+    // Get products by category
+    public List<Product> getProductsByCategory(String category) {
+        return productDao.getProductsByCategory(category);
+    }
 }

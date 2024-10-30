@@ -17,14 +17,14 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    // Get all products
-    @GetMapping
-    public List<Product> getAllProducts() {
-        for(var product : productService.getAllProducts()) {
-            System.out.println(product);
-        }
-        return productService.getAllProducts();
-    }
+//    // Get all products
+//    @GetMapping
+//    public List<Product> getAllProducts() {
+//        for(var product : productService.getAllProducts()) {
+//            System.out.println(product);
+//        }
+//        return productService.getAllProducts();
+//    }
 
     @GetMapping("/{id}")
     public ResponseEntity<?> getProductById(@PathVariable String id) {
@@ -36,6 +36,20 @@ public class ProductController {
             // Handle invalid ObjectId format
             return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                     .body("Invalid ID format: " + id);
+        }
+    }
+    // Get all products or filter by category
+    @GetMapping
+    public ResponseEntity<List<Product>> getProductsByCategory(
+            @RequestParam(value = "category", required = false) String category) {
+        try {
+            List<Product> products = (category != null) ?
+                    productService.getProductsByCategory(category) :
+                    productService.getAllProducts();
+            return ResponseEntity.ok(products);
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(null);
         }
     }
 

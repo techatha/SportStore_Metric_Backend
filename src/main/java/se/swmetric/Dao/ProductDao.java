@@ -22,16 +22,19 @@ public class ProductDao {
     // Find a product by ObjectId
     public Optional<Product> findById(String id) {
         ObjectId objectId = new ObjectId(id);
-        return productRepository.findById(objectId);
+        return productRepository.findById(String.valueOf(objectId));
     }
 
-
+    // Get products by category
+    public List<Product> getProductsByCategory(String category) {
+        return productRepository.findByCategoryCategoryNameIgnoreCase(category);
+    }
 
     public Product save(Product product) {
         return productRepository.save(product);
     }
 
     public void deleteById(ObjectId id) {
-        productRepository.deleteById(id);
+        productRepository.deleteById(String.valueOf(id));
     }
 }
