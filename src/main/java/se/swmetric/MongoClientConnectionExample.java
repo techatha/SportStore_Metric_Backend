@@ -9,6 +9,9 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 public class MongoClientConnectionExample {
     public static void main(String[] args) {
@@ -35,4 +38,5 @@ public class MongoClientConnectionExample {
             }
         }
     }
+
 }

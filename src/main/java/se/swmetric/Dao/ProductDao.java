@@ -19,9 +19,13 @@ public class ProductDao {
         return productRepository.findAll();
     }
 
-    public Optional<Product> findById(ObjectId id) {
-        return productRepository.findById(id);
+    // Find a product by ObjectId
+    public Optional<Product> findById(String id) {
+        ObjectId objectId = new ObjectId(id);
+        return productRepository.findById(objectId);
     }
+
+
 
     public Product save(Product product) {
         return productRepository.save(product);

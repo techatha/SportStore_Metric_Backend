@@ -15,32 +15,41 @@ public class ProductService {
     @Autowired
     private ProductDao productDao;
 
+    // Get all products
     public List<Product> getAllProducts() {
         return productDao.findAll();
     }
 
-    public Optional<Product> getProductById(ObjectId id) {
-        return productDao.findById(id);
+    // Get product by ID (String to ObjectId conversion handled)
+    public Optional<Product> getProductById(String id) {
+        try {
+            ObjectId objectId = new ObjectId(id);
+            return productDao.findById(String.valueOf(objectId));
+        } catch (IllegalArgumentException e) {
+            // Return empty optional if the ID is not valid
+            return Optional.empty();
+        }
     }
 
+    // Create a new product
     public Product createProduct(Product product) {
         return productDao.save(product);
     }
 
-    public Product updateProduct(ObjectId id, Product product) {
-        Optional<Product> existingProduct = productDao.findById(id);
-        if (existingProduct.isPresent()) {
-            product.setId(id); // Set the ID to ensure it updates the right product
-            return productDao.save(product);
-        }
-        return null;
-    }
+    // Update an existing product by ID
+    public Optional<Product> updateProduct(String id, Product product) {
+        try {
+            ObjectId objectId = new ObjectId(id);
+            Optional<Product> existingProduct = productDao.findById(String.valueOf(objectId));
 
-    public boolean deleteProduct(ObjectId id) {
-        if (productDao.findById(id).isPresent()) {
-            productDao.deleteById(id);
-            return true;
+            if (existingProduct.isPresent()) {
+                product.setId(objectId); // Set the ID to ensure it updates the correct product
+                return Optional.of(productDao.save(product));
+            }
+            return Optional.empty(); // Return empty if the product doesn't exist
+        } catch (IllegalArgumentException e) {
+            // Return empty optional if the ID format is invalid
+            return Optional.empty();
         }
-        return false;
     }
 }

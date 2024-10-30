@@ -1,7 +1,8 @@
 package se.swmetric.Controller;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import se.swmetric.entity.Product;
 import se.swmetric.service.ProductService;
@@ -16,20 +17,33 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    // Get all products
     @GetMapping
     public List<Product> getAllProducts() {
+        for(var product : productService.getAllProducts()) {
+            System.out.println(product);
+        }
         return productService.getAllProducts();
     }
 
     @GetMapping("/{id}")
-    public Optional<Product> getProductById(@PathVariable ObjectId id) {
-        return productService.getProductById(id);
+    public ResponseEntity<?> getProductById(@PathVariable String id) {
+        try {
+            Optional<Product> product = productService.getProductById(id);
+            return product.isPresent() ? ResponseEntity.ok(product.get()) : ResponseEntity.notFound().build();
+
+        } catch (IllegalArgumentException e) {
+            // Handle invalid ObjectId format
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body("Invalid ID format: " + id);
+        }
     }
 
+
+    // Create a new product
     @PostMapping
-    public Product createProduct(@RequestBody Product product) {
-        return productService.createProduct(product);
+    public ResponseEntity<Product> createProduct(@RequestBody Product product) {
+        Product createdProduct = productService.createProduct(product);
+        return ResponseEntity.status(HttpStatus.CREATED).body(createdProduct);
     }
-
 }
-
