@@ -47,9 +47,5 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.CREATED).body(createdProduct);
     }
 
-    @GetMapping("/category")
-    public ResponseEntity<List<Product>> getProductByCategory(@RequestParam(value = "_c") String category){
-        List<Product> output = productService.getAllProducts(category);
-        return ResponseEntity.ok(output);
-    }
+
 }
