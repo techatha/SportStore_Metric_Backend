@@ -36,4 +36,8 @@ public class ProductDao {
     public void deleteById(ObjectId id) {
         productRepository.deleteById(id);
     }
+
+    public List<Product> getProductsByCategory(String category) {
+        return productRepository.findByCategoryCategoryNameIgnoreCase(category);
+    }
 }
